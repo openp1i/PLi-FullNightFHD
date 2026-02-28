@@ -1536,6 +1536,19 @@
     <ePixmap position="495,10" zPosition="4" size="200,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
     <ePixmap position="730,10" zPosition="4" size="200,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
   </screen>
+  <!-- OAWeather-PLi -->
+  <screen name="WeatherSettingsViewNew" position="fill" flags="wfNoBorder" title="Weather Plugin Setup">
+    <panel name="PigTemplate"/>
+    <eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
+    <widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="status" position="30,560" size="720,120" zPosition="1" font="Regular;28" halign="left"/>
+  </screen>
+  <screen name="TestScreen" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
+    <widget name="meinelist" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+    <widget name="status" position="30,560" size="720,120" zPosition="1" font="Regular;28" halign="left"/>
+  </screen>
   <!-- Het Weer -->
   <screen name="weatherMenu" position="fill" flags="wfNoBorder" title="Weer info">
     <panel name="PigTemplate" />
@@ -2440,5 +2453,3 @@
     </widget>
   </screen>
 </skin>
-
-
