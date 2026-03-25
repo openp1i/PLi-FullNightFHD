@@ -871,7 +871,7 @@
   <!-- Summary Clock Rec Panel -->
   <screen name="SummaryClockRecPanel" position="0,0" size="400,240" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="0,0" size="400,30" font="Regular;24" halign="center">
-			<convert type="ClockToText">Format:%H:%M</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="180,200" size="30,30" alphatest="on"/>
   </screen>
