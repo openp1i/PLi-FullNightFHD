@@ -1078,7 +1078,7 @@
   <screen name="ServiceInfoSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <widget name="infolist" position="780,100" size="1110,874" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="6"/>
-    <widget source="session.CurrentService" render="Label" position="780,300" size="1110,600" transparent="1" zPosition="2" foregroundColor="#0000ffff" font="Regular;30" halign="left" valign="top" noWrap="0">
+    <widget source="session.CurrentService" render="Label" position="780,400" size="1110,500" transparent="1" zPosition="2" foregroundColor="#0000ffff" font="Regular;30" halign="left" valign="top" noWrap="0">
       <convert type="ServiceName">StreamUrl</convert>
     </widget>
   </screen>
