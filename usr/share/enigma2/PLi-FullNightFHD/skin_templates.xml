@@ -296,6 +296,10 @@
     <widget source="session.Event_Now" render="Progress" pixmap="infobar/pbar.png" position="260,954" size="1380,8" transparent="1" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_iptv.png" position="1642,901" size="60,32" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">IsStream</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_4_3.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
       <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
       <convert type="ConditionalShowHide" />
