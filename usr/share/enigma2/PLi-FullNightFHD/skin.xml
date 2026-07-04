@@ -285,13 +285,13 @@
 	<widget source="session.CurrentService" render="Label" position="820,75" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="Temperature" halign="left" noWrap="1" foregroundColor="red">
 		<convert type="PliExtra">Temperature</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="820,30" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
+	<widget source="session.CurrentService" render="Label" position="820,32" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
 		<convert type="PliExtra">CPULoad</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="30,30" size="900,28" font="Regular;26" foregroundColor="foreground" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+	<widget source="session.CurrentService" render="Label" position="30,32" size="900,28" font="Regular;26" foregroundColor="foreground" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">Uptime,Short</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="430,30" size="600,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+	<widget source="session.CurrentService" render="Label" position="430,32" size="600,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">FanInfo,Short</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="430,75" size="580,28" font="Regular;26" foregroundColor="cyan3" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
@@ -2310,4 +2310,3 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
     <widget name="description" position="780,100" size="1110,912" itemHeight="38" font="Regular;30" verticalAlignment="top"/>
   </screen>
 </skin>
-
