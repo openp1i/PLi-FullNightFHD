@@ -203,7 +203,7 @@
     <widget source="session.Event_Now" render="Label" position="545,68" size="400,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="30,118" size="915,502" font="Regular;30" halign="block" zPosition="1" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="975,20" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -215,7 +215,7 @@
     <widget source="session.Event_Next" render="Label" position="1490,68" size="400,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="975,118" size="915,502" font="Regular;30" halign="block" zPosition="1" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate"/>
@@ -223,70 +223,80 @@
   <!-- Second infobar -->
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
     <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="20,160" size="1,670" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
-    <eLabel position="960,160" size="1,670" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
-    <eLabel position="1900,160" size="1,670" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
-    <widget source="session.CurrentService" render="Label" position="30,10" size="1130,135" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="top" halign="left">
-      <convert type="PliExtraInfo">All</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1223,8" size="220,28" font="Regular; 22" zPosition="1" backgroundColor="secondBG" transparent="1" text="Temperature" halign="left" noWrap="1" foregroundColor="red">
-      <convert type="PliExtra">Temperature</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1597,8" size="230,28" font="Regular; 22" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPU speed" halign="right" noWrap="1" foregroundColor="green">
-      <convert type="PliExtra">CPUSpeed</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1420,8" size="180,28" font="Regular; 22" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
-      <convert type="PliExtra">CPULoad</convert>
-    </widget>
-    <eLabel name="snr" position="1145,43" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;21"/>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="window/bar_snr.png" backgroundColor="transpBlack" zPosition="1" position="1225,40" size="600,30" borderWidth="2" borderColor="grey">
+    <eLabel position="20,300" size="1,500" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
+    <eLabel position="960,300" size="1,500" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
+    <eLabel position="1900,300" size="1,500" foregroundColor="darkgrey" zPosition="3" backgroundColor="darkgrey"/>
+	<widget source="session.CurrentService" render="Label" position="30,140" size="1860,135" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;30" valign="top" halign="left">
+		<convert type="PliExtraInfo">All</convert>
+	</widget>
+    <eLabel name="snr" position="1145,33" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;21"/>
+    <widget source="session.FrontendStatus" render="Progress" pixmap="window/bar_snr.png" backgroundColor="transpBlack" zPosition="1" position="1225,31" size="600,30" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1834,44" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
+    <widget source="session.FrontendStatus" render="Label" position="1834,34" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="agc" position="1145,89" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;21"/>
-    <widget source="session.FrontendStatus" render="Progress" pixmap="window/bar_agc.png" zPosition="1" backgroundColor="transpBlack" position="1225,85" size="600,30" borderWidth="2" borderColor="grey">
-      <convert type="FrontendInfo">AGC</convert>
+    <eLabel name="agc" position="1145,79" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;21"/>
+    <widget source="session.FrontendStatus" render="Progress" pixmap="window/bar_agc.png" zPosition="1" backgroundColor="transpBlack" position="1225,75" size="600,30" borderWidth="2" borderColor="grey">
+      <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1834,89" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
-      <convert type="FrontendInfo">AGC</convert>
+    <widget source="session.FrontendStatus" render="Label" position="1834,79" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
+      <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="ber" position="1145,129" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;21"/>
-    <widget source="session.FrontendStatus" render="Label" position="1225,129" size="80,25" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
+    <eLabel name="ber" position="1145,119" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;21"/>
+    <widget source="session.FrontendStatus" render="Label" position="1225,119" size="80,25" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" position="1725,129" size="80,25" backgroundColor="darkgrey" halign="center" transparent="1" text="LOCK:" zPosition="1" font="Regular;21"/>
-    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" backgroundColor="transpBlack" zPosition="1" position="1805,128" size="30,30" alphatest="on">
+    <eLabel name="lock" position="1725,119" size="80,25" backgroundColor="darkgrey" halign="center" transparent="1" text="LOCK:" zPosition="1" font="Regular;21"/>
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" backgroundColor="transpBlack" zPosition="1" position="1805,118" size="30,30" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1380,125" size="300,28" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;25"/>
-    <widget source="session.Event_Now" render="Label" position="30,162" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
-      <convert type="EventName">NameNow</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="30,210" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">Genre</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="645,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="29,260" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="975,162" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
-      <convert type="EventName">NameNext</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="975,210" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">Genre</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="1590,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="975,260" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <panel name="InfoBarTemplate"/>
+    <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1380,115" size="300,28" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;25"/>
+	<widget source="session.Event_Now" render="Label" position="30,302" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
+		<convert type="EventName">NameNow</convert>
+	</widget>
+	<widget source="session.Event_Now" render="Label" position="30,350" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+		<convert type="EventName">Genre</convert>
+	</widget>
+	<widget source="session.Event_Now" render="Label" position="645,350" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+		<convert type="EventName">SmallRating</convert>
+	</widget>
+	<widget source="session.Event_Now" render="Label" position="30,400" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
+		<convert type="EventName">FullDescription</convert>
+	</widget>
+	<widget source="session.Event_Next" render="Label" position="975,302" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
+		<convert type="EventName">NameNext</convert>
+	</widget>
+	<widget source="session.Event_Next" render="Label" position="975,350" size="765,33" font="Regular;30" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+		<convert type="EventName">Genre</convert>
+	</widget>
+	<widget source="session.Event_Next" render="Label" position="1590,350" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+		<convert type="EventName">SmallRating</convert>
+	</widget>
+	<widget source="session.Event_Next" render="Label" position="975,400" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
+		<convert type="EventName">FullDescription</convert>
+	</widget>
+	<panel name="InfoBarTemplate"/>
+  <!-- PliExtra -->
+	<widget source="session.CurrentService" render="Label" position="30,75" size="300,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPU speed" halign="left" noWrap="1" foregroundColor="green">
+		<convert type="PliExtra">CPUSpeed</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="820,75" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="Temperature" halign="left" noWrap="1" foregroundColor="red">
+		<convert type="PliExtra">Temperature</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="820,30" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
+		<convert type="PliExtra">CPULoad</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="30,30" size="900,28" font="Regular;26" foregroundColor="foreground" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+		<convert type="PliExtra">Uptime,Short</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="430,30" size="600,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+		<convert type="PliExtra">FanInfo,Short</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="430,75" size="580,28" font="Regular;26" foregroundColor="cyan3" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+		<convert type="PliExtra">HDDTemp</convert>
+	</widget>
   </screen>
   <!-- Movie Player Infobar -->
   <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
