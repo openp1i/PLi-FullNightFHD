@@ -279,25 +279,31 @@
 	</widget>
 	<panel name="InfoBarTemplate"/>
   <!-- PliExtra -->
-	<widget source="session.CurrentService" render="Label" position="30,75" size="300,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPU speed" halign="left" noWrap="1" foregroundColor="green">
-		<convert type="PliExtra">CPUSpeed</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="820,75" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="Temperature" halign="left" noWrap="1" foregroundColor="red">
-		<convert type="PliExtra">Temperature</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="820,32" size="250,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
-		<convert type="PliExtra">CPULoad</convert>
-	</widget>
-	<widget source="session.CurrentService" render="Label" position="30,32" size="900,28" font="Regular;26" foregroundColor="foreground" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+	<ePixmap pixmap="infobar/uptime.png" position="15,27" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="75,32" size="320,28" font="Regular;26" foregroundColor="foreground" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">Uptime,Short</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="430,32" size="600,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+	<ePixmap pixmap="infobar/cpuspeed.png" position="15,70" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="75,75" size="320,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPU speed" halign="left" noWrap="1" foregroundColor="green">
+		<convert type="PliExtra">CPUSpeed</convert>
+	</widget>
+	<ePixmap pixmap="infobar/fanspeed.png" position="420,27" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="480,32" size="320,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">FanInfo,Short</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="430,75" size="580,28" font="Regular;26" foregroundColor="cyan3" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
+	<ePixmap pixmap="infobar/hddtemp.png" position="420,70" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="480,75" size="320,28" font="Regular;26" foregroundColor="cyan3" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">HDDTemp</convert>
 	</widget>
-  </screen>
+	<ePixmap pixmap="infobar/cpuload.png" position="800,27" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="860,32" size="320,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
+		<convert type="PliExtra">CPULoad</convert>
+	</widget>
+	<ePixmap pixmap="infobar/cputemp.png" position="800,70" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="860,75" size="320,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="Temperature" halign="left" noWrap="1" foregroundColor="red">
+		<convert type="PliExtra">Temperature</convert>
+	</widget>
+  </screen>	
   <!-- Movie Player Infobar -->
   <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
     <panel name="PlayerTemplate"/>
