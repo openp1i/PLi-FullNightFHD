@@ -291,9 +291,9 @@
 	<widget source="session.CurrentService" render="Label" position="500,32" size="350,28" font="Regular;26" foregroundColor="cyan" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
 		<convert type="PliExtra">FanInfo,Short</convert>
 	</widget>
-	<ePixmap pixmap="infobar/hddtemp.png" position="440,70" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="infobar/cpuinfo.png" position="440,70" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
 	<widget source="session.CurrentService" render="Label" position="500,75" size="350,28" font="Regular;26" foregroundColor="cyan3" backgroundColor="secondBG" zPosition="10" transparent="1" halign="left">
-		<convert type="PliExtra">HDDTemp</convert>
+		<convert type="PliCPU">CPU:$0 ($1$2$3 $4)</convert>
 	</widget>
 	<ePixmap pixmap="infobar/cpuload.png" position="800,27" zPosition="3" size="40,40" alphatest="blend" transparent="1" />
 	<widget source="session.CurrentService" render="Label" position="860,32" size="350,28" font="Regular; 26" zPosition="1" backgroundColor="secondBG" transparent="1" text="CPUload" halign="left" noWrap="1" foregroundColor="yellow">
