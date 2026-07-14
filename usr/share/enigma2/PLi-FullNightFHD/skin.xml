@@ -238,10 +238,10 @@
     </widget>
     <eLabel name="agc" position="1145,79" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;21"/>
     <widget source="session.FrontendStatus" render="Progress" pixmap="window/bar_agc.png" zPosition="1" backgroundColor="transpBlack" position="1225,75" size="600,30" borderWidth="2" borderColor="grey">
-      <convert type="FrontendInfo">SNR</convert>
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1834,79" size="80,28" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
-      <convert type="FrontendInfo">SNR</convert>
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <eLabel name="ber" position="1145,119" size="80,25" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;21"/>
     <widget source="session.FrontendStatus" render="Label" position="1225,119" size="80,25" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;21">
