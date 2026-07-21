@@ -2497,7 +2497,7 @@
     <!-- Title -->
     <eLabel text="RakutenTV - Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
     <!-- Config List -->
-    <widget name="config" position="780,105" size="1110,864" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <widget name="config" position="780,105" size="1110,868" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
     <!-- OK Button -->
     <ePixmap pixmap="buttons/green.png" position="628,1030" size="34,34" alphatest="on"/>
     <widget name="F2" backgroundColor="secondBG" font="Regular;34" halign="left" position="678,1030" size="370,38" transparent="1" zPosition="1"/>
