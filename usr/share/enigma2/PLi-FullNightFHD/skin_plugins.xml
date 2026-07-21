@@ -2452,4 +2452,56 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
+  <!-- RakutenTV Plugin -->
+  <screen name="RakutenTV" position="fill" flags="wfNoBorder">
+    <!-- Background Image -->
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/RakutenTV/images/rakutentv-fhd.png" position="0,0" size="1920,1080" zPosition="-2" alphatest="blend"/>
+    <panel name="PigLessTemplate"/>
+    <panel name="KeyMenuTemplate" />
+    <!-- Title -->
+    <eLabel text="Rakuten TV" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <!-- Logo -->
+    <widget name="logo" position="20,150" size="200,60" zPosition="5" scale="1" alphatest="blend"/>
+    <!-- Playlist/Status -->
+    <widget name="playlist" position="780,100" size="1110,75" font="Regular;37" backgroundColor="black" transparent="1" foregroundColor="white" zPosition="2" halign="center"/>
+    <!-- Help Text -->
+    <widget name="help" position="30,975" size="720,38" font="Regular;28" backgroundColor="black" foregroundColor="#9b9b9b" transparent="1" halign="center"/>
+    <!-- Color Buttons -->
+    <ePixmap pixmap="buttons/red.png" position="192,1030" size="34,34" alphatest="on"/>
+    <ePixmap pixmap="buttons/green.png" position="628,1030" size="34,34" alphatest="on"/>
+    <ePixmap pixmap="buttons/yellow.png" position="1064,1030" size="34,34" alphatest="on"/>
+    <ePixmap pixmap="buttons/blue.png" position="1500,1030" size="34,34" alphatest="on"/>
+    <!-- Color Button Labels -->
+    <widget name="red" backgroundColor="secondBG" font="Regular;34" halign="left" position="242,1030" size="370,38" transparent="1" zPosition="1"/>
+    <widget name="green" backgroundColor="secondBG" font="Regular;34" halign="left" position="678,1030" size="370,38" transparent="1" zPosition="1"/>
+    <widget name="yellow" backgroundColor="secondBG" font="Regular;34" halign="left" position="1114,1030" size="370,38" transparent="1" zPosition="1"/>
+    <widget name="blue" backgroundColor="secondBG" font="Regular;34" halign="left" position="1550,1030" size="370,38" transparent="1" zPosition="1"/>
+  </screen>
+  <!-- RakutenTV Download Progress Screen -->
+  <screen name="RakutenTVdownload" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <!-- Title -->
+    <eLabel text="Rakuten TV EPG Download" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <!-- Picon / Logo -->
+    <widget name="picon" position="30,95" size="120,80" zPosition="5" alphatest="blend"/>
+    <!-- Action/Status Labels -->
+    <widget name="action" position="780,105" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="left"/>
+    <widget name="status" position="780,165" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="left"/>
+    <!-- Progress Bar -->
+    <widget name="progress" position="780,225" size="1110,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+    <widget name="wait" position="780,260" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="center"/>
+  </screen>
+  <!-- RakutenTV Configuration Screen -->
+  <screen name="rakutentvConfigScreen" position="fill" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <!-- Title -->
+    <eLabel text="RakutenTV - Setup" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+    <!-- Version Info -->
+    <widget name="title" position="30,105" size="720,45" font="Regular;30" backgroundColor="secondBG" transparent="1" zPosition="1" halign="left"/>
+    <!-- Config List -->
+    <widget name="config" position="780,105" size="1110,864" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+    <!-- OK Button -->
+    <ePixmap pixmap="buttons/green.png" position="628,1030" size="34,34" alphatest="on"/>
+    <widget name="F2" backgroundColor="secondBG" font="Regular;34" halign="left" position="678,1030" size="370,38" transparent="1" zPosition="1"/>
+  </screen>
 </skin>
