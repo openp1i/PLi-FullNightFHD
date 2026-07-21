@@ -2488,7 +2488,7 @@
     <widget name="action" position="780,105" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="left"/>
     <widget name="status" position="780,165" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="left"/>
     <!-- Progress Bar -->
-    <widget name="progress" position="780,225" size="1110,22" pixmap="progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+    <widget name="progress" position="780,225" size="1110,22" pixmap="progressbar-fhd.png" borderWidth="2" borderColor="#cccccc"/>
     <widget name="wait" position="780,260" size="1110,45" font="Regular;33" backgroundColor="secondBG" transparent="1" zPosition="1" halign="center"/>
   </screen>
   <!-- RakutenTV Configuration Screen -->
